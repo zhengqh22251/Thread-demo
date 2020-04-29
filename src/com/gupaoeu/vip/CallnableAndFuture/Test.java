@@ -15,7 +15,7 @@ public class Test implements Callable<String> {
 */
         ExecutorService executorService = Executors.newFixedThreadPool(5);
         Future future =  executorService.submit(test);
-        //executorService.shutdown();
+        executorService.shutdown();
         //executorService.shutdownNow();
         System.out.println(future.get());
 

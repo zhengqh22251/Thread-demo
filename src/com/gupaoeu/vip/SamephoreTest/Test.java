@@ -32,7 +32,7 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        Semaphore semaphore = new Semaphore(5);// 令牌数量
+        Semaphore semaphore = new Semaphore(1);// 令牌数量
         for (int i = 0; i <10 ; i++) {
              new car(i,semaphore).start();
         }

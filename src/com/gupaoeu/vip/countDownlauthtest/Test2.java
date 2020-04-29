@@ -10,7 +10,7 @@ public class Test2 extends Thread {
     static CountDownLatch countDownLatch = new CountDownLatch(1);
 
     public static void main(String[] args) {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10; i++) {
              new Test2().start();
         }
         countDownLatch.countDown();//释放1000个线程

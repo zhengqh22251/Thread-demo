@@ -1,5 +1,7 @@
 package com.gupaoeu.vip.blockQueue;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
@@ -33,8 +35,9 @@ public class BlockingTest {
 
 
     public static void main(String[] args) throws InterruptedException {
-        for (int i = 0; i <100 ; i++) {
+        for (int i = 0; i <10 ; i++) {
             new BlockingTest().add("垃圾食品"+i);
         }
+
     }
 }

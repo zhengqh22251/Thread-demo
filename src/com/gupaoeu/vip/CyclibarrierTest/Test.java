@@ -7,7 +7,7 @@ import java.util.concurrent.CyclicBarrier;
  * @date 2020/3/17 10:52
  **/
 public class Test extends Thread{
-    // Cyclibarrier 栅栏屏障  CountDownlatch 也可以实现
+    // Cyclibarrier 栅栏屏障  执行完屏障内的线程 再执行传入对象的线程run方法   CountDownlatch 也可以实现
     public static void main(String[] args) {
         CyclicBarrier cyclicBarrier =
                 new CyclicBarrier(3,new Test());
